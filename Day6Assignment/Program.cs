@@ -17,6 +17,9 @@ while (c != 'n')
             PerfectNumber pf = new PerfectNumber();
             pf.Perfect();
             break;
-
+        case 3:
+            PrimeNumber p = new PrimeNumber();
+            p.prime();
+            break;
     }
 }
