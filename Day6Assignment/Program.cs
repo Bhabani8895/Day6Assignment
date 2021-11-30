@@ -10,6 +10,7 @@ while (c != 'n')
     Console.WriteLine("\t\t((((((5.Coupon Number         ))))))");
     Console.WriteLine("\t\t((((((6.Stop Watch            ))))))");
     Console.WriteLine("\t\t((((((7.Vending Machine       ))))))");
+    Console.WriteLine("\t\t((((((8.Grigorian Calender    ))))))");
     int Aloo = Convert.ToInt32(Console.ReadLine());
     switch (Aloo)
     {
@@ -37,10 +38,22 @@ while (c != 'n')
             StopWatch s = new StopWatch();
             s.RunProgram();
             break;
+        case 7:
             VendingMachine vm = new VendingMachine();
             Console.WriteLine("Enter the amount:");
             int amount = Convert.ToInt32(Console.ReadLine());
             vm.countCurrency(amount);
             break;
+        case 8:
+            GrigorianCalender gc = new GrigorianCalender();
+            Console.WriteLine("Enter date:");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter month:");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter year:");
+            int y = Convert.ToInt32(Console.ReadLine());
+            gc.grig(d, m, y);
+            break;
+
     }
 }
