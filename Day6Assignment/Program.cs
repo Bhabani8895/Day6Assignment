@@ -12,6 +12,7 @@ while (c != 'n')
     Console.WriteLine("\t\t((((((7.Vending Machine       ))))))");
     Console.WriteLine("\t\t((((((8.Grigorian Calender    ))))))");
     Console.WriteLine("\t\t((((((9.Temprature Conversion ))))))");
+    Console.WriteLine("\t\t((((((10.Monthly payment      ))))))");
     int Aloo = Convert.ToInt32(Console.ReadLine());
     switch (Aloo)
     {
@@ -58,6 +59,14 @@ while (c != 'n')
         case 9:
             TempConversion tem = new TempConversion();
             TempConversion.Temp_Coversion();
+            break;
+        case 10:
+            MonthlyPayment mn = new MonthlyPayment();
+            Console.WriteLine("Enter principal year and rate%");
+            int pr = Convert.ToInt32(Console.ReadLine());
+            int yr = Convert.ToInt32(Console.ReadLine());
+            int rate = Convert.ToInt32(Console.ReadLine());
+            mn.MonthlyInstallment(pr, yr, rate);
             break;
 
     }
