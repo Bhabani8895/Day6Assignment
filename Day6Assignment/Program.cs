@@ -68,6 +68,9 @@ while (c != 'n')
             int rate = Convert.ToInt32(Console.ReadLine());
             mn.MonthlyInstallment(pr, yr, rate);
             break;
-
+        case 11:
+            NumberConversion num = new NumberConversion();
+            NumberConversion.toBinary();
+            break;
     }
 }
