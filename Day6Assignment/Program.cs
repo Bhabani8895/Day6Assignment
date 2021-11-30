@@ -11,6 +11,7 @@ while (c != 'n')
     Console.WriteLine("\t\t((((((6.Stop Watch            ))))))");
     Console.WriteLine("\t\t((((((7.Vending Machine       ))))))");
     Console.WriteLine("\t\t((((((8.Grigorian Calender    ))))))");
+    Console.WriteLine("\t\t((((((9.Temprature Conversion ))))))");
     int Aloo = Convert.ToInt32(Console.ReadLine());
     switch (Aloo)
     {
@@ -53,6 +54,10 @@ while (c != 'n')
             Console.WriteLine("Enter year:");
             int y = Convert.ToInt32(Console.ReadLine());
             gc.grig(d, m, y);
+            break;
+        case 9:
+            TempConversion tem = new TempConversion();
+            TempConversion.Temp_Coversion();
             break;
 
     }
