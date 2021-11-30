@@ -72,5 +72,16 @@ while (c != 'n')
             NumberConversion num = new NumberConversion();
             NumberConversion.toBinary();
             break;
+        case 12:
+            SwapNibblesOfBinary sw = new SwapNibblesOfBinary();
+            int n = sw.swapNibbles(100);
+
+            Console.WriteLine("New after swapping of nibbles=" + n);
+            break;
+        default:
+            Console.WriteLine("Sorry Wrong choice!!");
+            break;
     }
+    Console.WriteLine("\tplease enter n to stop your programl or any key run!!");
+    c = Convert.ToChar(Console.ReadLine());
 }
