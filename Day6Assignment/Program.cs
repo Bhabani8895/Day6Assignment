@@ -8,6 +8,7 @@ while (c != 'n')
     Console.WriteLine("\t\t((((((2.Perfect Number        ))))))");
     Console.WriteLine("\t\t((((((4.Reverse Number        ))))))");
     Console.WriteLine("\t\t((((((5.Coupon Number         ))))))");
+    Console.WriteLine("\t\t((((((6.Stop Watch            ))))))");
 
     int Aloo = Convert.ToInt32(Console.ReadLine());
     switch (Aloo)
@@ -31,6 +32,10 @@ while (c != 'n')
         case 5:
             CouponNum cn = new CouponNum();
             cn.ReadNumOfCoupons();
+            break;
+        case 6:
+            StopWatch s = new StopWatch();
+            s.RunProgram();
             break;
     }
 }
